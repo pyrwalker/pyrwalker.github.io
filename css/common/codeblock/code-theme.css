@@ -28,7 +28,7 @@
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -61,7 +61,7 @@
     --note-orange-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
-    --first-screen-text-color: #fff;
+    --first-screen-text-color: #fff0f5;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -128,7 +128,7 @@
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 .dark-mode {
   --background-color: #202124;

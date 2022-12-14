@@ -28,7 +28,7 @@
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -61,7 +61,7 @@
     --note-orange-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
-    --first-screen-text-color: #fff;
+    --first-screen-text-color: #fff0f5;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -128,7 +128,7 @@
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 .dark-mode {
   --background-color: #202124;
@@ -649,7 +649,7 @@ button {
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -682,7 +682,7 @@ button {
     --note-orange-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
-    --first-screen-text-color: #fff;
+    --first-screen-text-color: #fff0f5;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -749,7 +749,7 @@ button {
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 .dark-mode {
   --background-color: #202124;
@@ -1149,7 +1149,7 @@ pre .selector-pseudo {
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -1182,7 +1182,7 @@ pre .selector-pseudo {
     --note-orange-title-bg: #fdf3e9;
     --note-black-title-bg: #e9e9e9;
     --note-purple-title-bg: #f9e9fd;
-    --first-screen-text-color: #fff;
+    --first-screen-text-color: #fff0f5;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -1249,7 +1249,7 @@ pre .selector-pseudo {
   --note-orange-title-bg: #fdf3e9;
   --note-black-title-bg: #e9e9e9;
   --note-purple-title-bg: #f9e9fd;
-  --first-screen-text-color: #fff;
+  --first-screen-text-color: #fff0f5;
 }
 .dark-mode {
   --background-color: #202124;
@@ -2393,19 +2393,19 @@ pre .selector-pseudo {
 }
 @media (prefers-color-scheme: light) {
   .first-screen-container {
-    background: url("/images/background.svg") center center/cover no-repeat !important;
+    background: url("/images/home.jpg") center center/cover no-repeat !important;
   }
 }
 @media (prefers-color-scheme: dark) {
   .first-screen-container {
-    background: url("/images/background.svg") center center/cover no-repeat !important;
+    background: url("/images/home.jpg") center center/cover no-repeat !important;
   }
 }
 .light-mode .first-screen-container {
-  background: url("/images/background.svg") center center/cover no-repeat !important;
+  background: url("/images/home.jpg") center center/cover no-repeat !important;
 }
 .dark-mode .first-screen-container {
-  background: url("/images/background.svg") center center/cover no-repeat !important;
+  background: url("/images/home.jpg") center center/cover no-repeat !important;
 }
 .image-viewer-container {
   position: fixed;

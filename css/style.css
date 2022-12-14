@@ -95,7 +95,7 @@
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #d1d1b6;
+    --first-screen-text-color: #fff0f5;
   }
 }
 .light-mode {
@@ -160,7 +160,7 @@
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #d1d1b6;
+  --first-screen-text-color: #fff0f5;
 }
 .fade-in-down-animation {
   animation-fill-mode: both;
@@ -716,7 +716,7 @@ button {
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #d1d1b6;
+    --first-screen-text-color: #fff0f5;
   }
 }
 .light-mode {
@@ -781,7 +781,7 @@ button {
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #d1d1b6;
+  --first-screen-text-color: #fff0f5;
 }
 :root {
   --code-foreground: #3b4143;
@@ -1216,7 +1216,7 @@ pre .selector-pseudo {
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #d1d1b6;
+    --first-screen-text-color: #fff0f5;
   }
 }
 .light-mode {
@@ -1281,7 +1281,7 @@ pre .selector-pseudo {
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #d1d1b6;
+  --first-screen-text-color: #fff0f5;
 }
 :root {
   --code-foreground: #3b4143;
@@ -1838,7 +1838,7 @@ pre .selector-pseudo {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, rgba(247,135,54,0.208) 0%, rgba(54,125,247,0.208) 100%);
+  background: linear-gradient(120deg, rgba(246,87,54,0.208) 0%, rgba(54,125,247,0.208) 100%);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   padding-top: 2px;
@@ -1882,6 +1882,27 @@ pre .selector-pseudo {
 .header-shrink .header-wrapper .header-content .left {
   transform: scale(0.72);
   transform-origin: left;
+}
+.header-wrapper .header-content .left .logo-image {
+  width: 46px;
+  height: 46px;
+  margin-right: 8px;
+}
+@media (max-width: 780px) {
+  .header-wrapper .header-content .left .logo-image {
+    width: 41.4px;
+    height: 41.4px;
+  }
+}
+@media (max-width: 500px) {
+  .header-wrapper .header-content .left .logo-image {
+    width: 36.800000000000004px;
+    height: 36.800000000000004px;
+  }
+}
+.header-wrapper .header-content .left .logo-image img {
+  border-radius: 6px;
+  width: 100%;
 }
 .header-wrapper .header-content .left .logo-title {
   font-size: 2rem;
@@ -2372,19 +2393,19 @@ pre .selector-pseudo {
 }
 @media (prefers-color-scheme: light) {
   .first-screen-container {
-    background: url("https://evan.beee.top/img/wallhaven-wqery6-light.webp") center center/cover no-repeat !important;
+    background: url("/images/background.svg") center center/cover no-repeat !important;
   }
 }
 @media (prefers-color-scheme: dark) {
   .first-screen-container {
-    background: url("https://evan.beee.top/img/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
+    background: url("/images/background.svg") center center/cover no-repeat !important;
   }
 }
 .light-mode .first-screen-container {
-  background: url("https://evan.beee.top/img/wallhaven-wqery6-light.webp") center center/cover no-repeat !important;
+  background: url("/images/background.svg") center center/cover no-repeat !important;
 }
 .dark-mode .first-screen-container {
-  background: url("https://evan.beee.top/img/wallhaven-wqery6-dark.webp") center center/cover no-repeat !important;
+  background: url("/images/background.svg") center center/cover no-repeat !important;
 }
 .image-viewer-container {
   position: fixed;

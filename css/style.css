@@ -2393,19 +2393,19 @@ pre .selector-pseudo {
 }
 @media (prefers-color-scheme: light) {
   .first-screen-container {
-    background: url("/images/home.jpg") center center/cover no-repeat !important;
+    background: url("/images/home.svg") center center/cover no-repeat !important;
   }
 }
 @media (prefers-color-scheme: dark) {
   .first-screen-container {
-    background: url("/images/home.jpg") center center/cover no-repeat !important;
+    background: url("/images/home.svg") center center/cover no-repeat !important;
   }
 }
 .light-mode .first-screen-container {
-  background: url("/images/home.jpg") center center/cover no-repeat !important;
+  background: url("/images/home.svg") center center/cover no-repeat !important;
 }
 .dark-mode .first-screen-container {
-  background: url("/images/home.jpg") center center/cover no-repeat !important;
+  background: url("/images/home.svg") center center/cover no-repeat !important;
 }
 .image-viewer-container {
   position: fixed;

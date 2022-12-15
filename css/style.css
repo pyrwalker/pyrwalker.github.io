@@ -95,7 +95,7 @@
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #fff0f5;
+    --first-screen-text-color: #fffafa;
   }
 }
 .light-mode {
@@ -160,7 +160,7 @@
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #fff0f5;
+  --first-screen-text-color: #fffafa;
 }
 .fade-in-down-animation {
   animation-fill-mode: both;
@@ -716,7 +716,7 @@ button {
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #fff0f5;
+    --first-screen-text-color: #fffafa;
   }
 }
 .light-mode {
@@ -781,7 +781,7 @@ button {
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #fff0f5;
+  --first-screen-text-color: #fffafa;
 }
 :root {
   --code-foreground: #3b4143;
@@ -1216,7 +1216,7 @@ pre .selector-pseudo {
     --note-orange-title-bg: #4e3a1e;
     --note-black-title-bg: #1e1e1e;
     --note-purple-title-bg: #4e1e4e;
-    --first-screen-text-color: #fff0f5;
+    --first-screen-text-color: #fffafa;
   }
 }
 .light-mode {
@@ -1281,7 +1281,7 @@ pre .selector-pseudo {
   --note-orange-title-bg: #4e3a1e;
   --note-black-title-bg: #1e1e1e;
   --note-purple-title-bg: #4e1e4e;
-  --first-screen-text-color: #fff0f5;
+  --first-screen-text-color: #fffafa;
 }
 :root {
   --code-foreground: #3b4143;

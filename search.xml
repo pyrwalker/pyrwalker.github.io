@@ -28,8 +28,8 @@
                      
                 ></p>
 <h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>于是，我有了一个大胆的想法，<strong>用ChatGPT来构建一个游戏世界</strong>！<br>想法来源于小时候跟我小叔叔玩过的一个游戏，当时玩不了手机和电脑，我和他就想到了一个文字冒险游戏（姑且这么称呼)，游戏的背景是建立在一本网络小说《再生勇士》上的，每回合用猜拳决定行动，真是满满回忆啊。</p>
-<p>&#x2F;&#x2F;———————————————————————————————<br><font color=red>提示前方中二浓度过高！</font></p>
-<p>&#x2F;&#x2F;———————————————————————————————</p>
+<p><font color=red>提示前方中二浓度过高！</font></p>
+<hr>
 <h3 id="游戏过程"><a href="#游戏过程" class="headerlink" title="游戏过程"></a>游戏过程</h3><p><strong>首先，要求ChatGPT跟我玩个冒险游戏，</strong><br><img  
                      lazyload
                      src="/images/loading.svg"
@@ -111,13 +111,62 @@
 <h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><h3 id="灵感来由："><a href="#灵感来由：" class="headerlink" title="灵感来由："></a>灵感来由：</h3><p>搭建这个博客的想法来源于一个经常和我捣鼓的朋友，再加上之前一直有个想把自己学过的知识记录下来的念头，两个想法碰撞起来就有了这个博客的雏形。</p>
 <p>这个博客是依据GitHub Page 与 Hexo的框架共同搭建的，由于在GitHub上能找到许多大佬们写好的Hexo主题，在这个基础上加入自己的元素，对小白还是比较友好的。</p>
 <h3 id="bugs："><a href="#bugs：" class="headerlink" title="bugs："></a>bugs：</h3><ul>
-<li><input disabled="" type="checkbox"> 因为还没有理解的插件原理，部分功能仍处于关闭状态。</li>
-<li><input disabled="" type="checkbox"> 手机端访问存在bug,无法使用插件</li>
-<li><input disabled="" type="checkbox"> https连接不安全报错</li>
+<li>因为还没有理解的插件原理，部分功能仍处于关闭状态。</li>
+<li>手机端访问存在bug,无法使用插件</li>
+<li>https连接不安全报错</li>
 </ul>
 <p>因为各种各样的原因<del>（主要是拖延症）</del>，这个博客到现在才勉强搭起来，其中存在的bug，之后也会进一步完善美化，还请见谅。</p>
 <h2 id="创作内容"><a href="#创作内容" class="headerlink" title="创作内容"></a>创作内容</h2><p>对于之后小破站内容的更新，我想大概会分为两部分，一部分是<strong>新知识的学习心得</strong>，另一部分是<strong>一些有趣经历的分享</strong>。关于这个博客的搭建过程我也会实时分享在这里。</p>
 <p><strong>感谢你对小破站的关心，招待不周，还请见谅。</strong></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>blog搭建过程（实时更新）</title>
+    <url>/2022/07/26/blog%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>整理了在搭建博客时遇到的问题与解决方法</p>
+<ul>
+<li><p>基本搭建过程<br><a class="link"   href="https://zhuanlan.zhihu.com/p/60578464" >使用 Hexo+GitHub 搭建个人免费博客教程<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>hexo初始化失败</p>
+</li>
+</ul>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment">#开了网络代理运行运行&quot;hexo init&quot;失败</span></span><br></pre></td></tr></table></figure></div>
+<ul>
+<li><p>部署到自己的网址</p>
+<p>  添加CNAME文件，在github仓库中的page界面加入自己网站域名</p>
+</li>
+<li><p>选择主题,主题配置</p>
+<p>阅读主题文档。<br><a class="link"   href="https://redefine-docs.evanluo.top/docs" >redefine文档<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>hexo d上传过慢</p>
+<p>git开启端口，施展魔法。</p>
+</li>
+<li><p>图片显示问题</p>
+</li>
+</ul>
+<ol>
+<li><p>在source文件夹中建立images文件夹，将图片命名为.&#x2F;path&#x2F;to&#x2F;xx.jpg，按照教程中所说的那个插件（hexo-asset-image）好像不起作用,可能是我的npm的问题,放弃使用本方法，改用图床搭建。</p>
+<p><a class="link"   href="https://cloud.tencent.com/developer/article/1702112" >hexo 图片显示问题及使用typora设置图片路径 <i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>图床搭建</p>
+<p><a class="link"   href="https://www.cnblogs.com/yangstar/p/16700586.html" >阿里云图床搭建 - yangstar - 博客园 (cnblogs.com)<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>利用picgo与typora搭配实现本地与网页图片显示。</p>
+</li>
+</ol>
+<ul>
+<li>解决连接不安全的问题</li>
+</ul>
+<ol>
+<li><p>在阿里云购买ssl证书 。</p>
+<p><a class="link"   href="https://developer.aliyun.com/article/875508#comment" >2022阿里云免费SSL证书申请全过程<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>硅云似乎需要虚拟主机才能部署,搁置。</p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>技术</tag>
+      </tags>
   </entry>
 </search>

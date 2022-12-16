@@ -6,10 +6,32 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-16T05:28:34.881Z</updated>
+  <updated>2022-12-16T12:35:52.294Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>费米能级推导并解释其与温度的关系</title>
+    <link href="http://example.com/2022/12/16/Fermi_energy/"/>
+    <id>http://example.com/2022/12/16/Fermi_energy/</id>
+    <published>2022-12-16T12:35:41.639Z</published>
+    <updated>2022-12-16T12:35:52.294Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="费米能级推导并解释其与温度的关系"><a href="#费米能级推导并解释其与温度的关系" class="headerlink" title="费米能级推导并解释其与温度的关系"></a>费米能级推导并解释其与温度的关系</h1><h2 id="费米-狄拉克分布"><a href="#费米-狄拉克分布" class="headerlink" title="费米-狄拉克分布"></a>费米-狄拉克分布</h2><p>量子统计中费米子所遵循的统计规律，使用统计规律的前提为系统中各粒子之间的相互作用可以忽略不计。</p><p>我们首先给出费米分布函数：<br>$$<br>f(E)&#x3D;\frac{1}{e^{(E-E_F)&#x2F;kT}+1} \tag{1}<br>$$<br>其中各物理量解释如下：</p><p>$f(E)$：表示一个电子占据能量为E的本征态的几率，其值为0~1</p><p>$E_F$：称为费米能级，由整个系统决定</p><p>$k$：玻尔兹曼常数</p><p>另外，我们将引入态密度的概念$N(E)$:电子能级为准连续分布的情况下，单位能量间隔内的电子态数目。</p><h2 id="费米能级-E-F-推导"><a href="#费米能级-E-F-推导" class="headerlink" title="费米能级$E_F$推导"></a>费米能级$E_F$推导</h2><p>在0K的极限温度下,没有热激发，根据电子总数等于所有能量位置态密度的积分，我们有：<br>$$<br>N&#x3D;\int_0^{E_F^0}N(E)dE\tag2<br>$$<br>而当温度在大于0K的有限温度下时，根据能态密度函数我们可以得到：<br>$$<br>N&#x3D;\int_0^\infty f(E)N(E)dE\tag3<br>$$</p><p>对于$(3)$式积分，我们利用换元与分部积分处理：</p><p>我们引入：<br>$$<br>Q(E)&#x3D;\int_{0}^{E}N(E)dE\tag4<br>$$<br>那么$(2)$转变为：<br>$$<br>N&#x3D;\left.f(E) Q(E)\right|<em>{0} ^{\infty}+\int</em>{0}^{\infty} Q(E)\left(-\frac{\partial f}{\partial E}\right) dE&#x3D;\int_{0}^{\infty} Q(E)\left(-\frac{\partial f}{\partial E}\right) dE\tag5<br>$$</p><p>将$(1)$式的费米分布函数式代入<br>$$<br>-\frac{\partial f}{\partial E}&#x3D;\frac{1}{\left[e^{\left(E-E_{F}\right) &#x2F; k T}+1\right]\left[e^{-\left(E-E_{F}\right) &#x2F; kT}+1\right]}\tag6<br>$$<br>观察得到，$(6)$式为偶函数，在后面化简中我们将用到这个性质。</p><p>同时，对$Q(E)$进行在$E_F$泰勒展开：<br>$$<br>Q(E)&#x3D;Q\left(E_{F}\right)+Q^{\prime}\left(E_{F}\right)\left(E-E_{F}\right)+\frac{1}{2} Q^{\prime \prime}\left(E_{F}\right)\left(E-E_{F}\right)^{2}\tag7<br>$$<br>将$(6)、(7)$代入$(5)$式中：<br>$$<br>N&#x3D;  Q\left(E_{F}\right) \int_{-\infty}^{\infty}\left(-\frac{\partial f}{\partial E}\right) d E+Q^{\prime}\left(E_{F}\right) \int_{-\infty}^{\infty}\left(E-E_{F}\right)\left(-\frac{\partial f}{\partial E}\right) d E + \frac{1}{2} Q^{\prime \prime}\left(E_{F}\right) \int_{-\infty}^{\infty}\left(E-E_{F}\right)^{2}\left(-\frac{\partial f}{\partial E}\right) d E\tag8<br>$$</p><p>根据$(6)$式偶函数的性质，第一项中$ \int_{-\infty}^{\infty}(-\frac{\partial f}{\partial E})dE &#x3D; 1$，第二项为0，于是化简得到：<br>$$<br>N&#x3D;Q\left(E_{F}\right)+ \frac{1}{2} Q^{\prime \prime}\left(E_{F}\right) \int_{-\infty}^{\infty}\left(E-E_{F}\right)^{2}\left(-\frac{\partial f}{\partial E}\right) d E&#x3D;Q(E_F)\frac{\pi^{2}}{6} Q^{\prime \prime}\left(E_{F}\right)\left(kT\right)^{2}\tag8<br>$$<br>又根据$(2)$中绝对零度下的情况，得到：<br>$$<br>Q\left(E_{F}^{0}\right)&#x3D;Q\left(E_{F}\right)+\frac{\pi^{2}}{6} Q^{\prime \prime}\left(E_{F}\right)\left(kT\right)^{2}\tag9<br>$$<br>到这里我们就已经获得了$Q(E_F)$与$Q(E_F^0)$之间的关系，下面只需要把$E_F$用$E_F^0$表示出来即可。为了实现这一点，我们仍然采用泰勒展开：<br>$$<br>\begin{array}{l}<br>Q\left(E_{F}\right) \approx Q\left(E_{F}^{0}\right)+Q^{\prime}\left(E_{F}^{0}\right)\left(E_{F}-E_{F}^{0}\right) \<br>Q^{\prime \prime}\left(E_{F}\right) \approx Q^{\prime \prime}\left(E_{F}^{0}\right)<br>\end{array}\tag{10}<br>$$<br>将$(10)$式代入$(9)$式并化简，得到：<br>$$<br>E_{F}&#x3D;E_{F}^{0}-\left(\pi^{2} &#x2F; 6\right)\left(\frac{Q^{\prime \prime}}{Q^{\prime}}\right)<em>{E</em>{F}^{0}}\left(k\right)^{2}\&#x3D;E_{F}^{0}\left{1-\frac{\pi^{2}}{6} E_{F}^{0}\left[\frac{d}{d E} \ln Q^{\prime}(E)\right]<em>{E</em>{F}^{0}}\left(kT\right)^{2}\right}\&#x3D;E_{F}^{0}\left{1-\frac{\pi^{2}}{6 E_{F}^{0}}\left[\frac{d}{d E} \ln N(E)\right]<em>{E</em>{F}^{0}}\left(kT\right)^{2}\right}\tag{11}<br>$$<br>进一步地，对于近自由电子而言，态密度满足以下关系：<br>$$<br>N(E) \propto E^{1 &#x2F; 2}\tag{12}<br>$$<br>我们得到在近自由电子近似下的费米能级表达式：<br>$$<br>E_{F}&#x3D;E_{F}^{0}\left[1-\frac{\pi^{2}}{12}\left(\frac{k_T}{E_{F}^{0}}\right)^{2}\right]\tag{13}<br>$$</p><h2 id="费米能级与温度的关系"><a href="#费米能级与温度的关系" class="headerlink" title="费米能级与温度的关系"></a>费米能级与温度的关系</h2><p>根据$(13)$式，我们已经可以非常清楚的发现，费米能级与温度的关系了，即<strong>随着温度的升高，费米能级是降低的。</strong></p><p>听起来这是有点反常识的，但是我们只要理解$E_F$的物理含义就不难发现症结所在。$E_F$定义是当电子落于其上的概率是50%。定性地来说，不妨假设在TK温度下，仍保持原先0K温度下的费米面位置不变，即$E_F&#x3D;E_F^0$。那么当温度升高时，会产生热激发，让费米面附近出现填充。</p><p>根据$(6)$式：<br>$$<br>-\frac{\partial f}{\partial E}&#x3D;\frac{1}{\left[e^{\left(E-E_{F}\right) &#x2F; k T}+1\right]\left[e^{-\left(E-E_{F}\right) &#x2F; kT}+1\right]}\tag6<br>$$<br>我们知道在费米能级上下电子增减的几率应当是相同的，然而近自由电子近似情况下，$N(E)$会随着$E$增大而增大，所以为了补偿这部分增大量，$E_F$势必会有一个减小。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;费米能级推导并解释其与温度的关系&quot;&gt;&lt;a href=&quot;#费米能级推导并解释其与温度的关系&quot; class=&quot;headerlink&quot; title=&quot;费米能级推导并解释其与温度的关系&quot;&gt;&lt;/a&gt;费米能级推导并解释其与温度的关系&lt;/h1&gt;&lt;h2 id=&quot;费米-狄拉克分布&quot;</summary>
+      
+    
+    
+    
+    
+    <category term="固体物理" scheme="http://example.com/tags/%E5%9B%BA%E4%BD%93%E7%89%A9%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>ChatGPT:学习助手？冒险游戏✓</title>

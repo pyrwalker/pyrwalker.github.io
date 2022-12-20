@@ -202,10 +202,4 @@
 <p><strong>感谢你对小破站的关心，招待不周，还请见谅。</strong></p>
 ]]></content>
   </entry>
-  <entry>
-    <title>利用wsl与扩展屏构建舒适的编程环境</title>
-    <url>/2022/12/19/wsl/</url>
-    <content><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>在上学期做工高报名表的时候，最后一题是关于ros的使用的，其中涉及到了linux的安装与使用，当时是我第一次接触linux系统，直接就上了双系统（真有我的。于是，一个当时连cd和mv命令都分不清的人，面对着一屏幕的报错，开始怀疑人生</p>
-<h3 id="安装扩展屏"><a href="#安装扩展屏" class="headerlink" title="安装扩展屏"></a>安装扩展屏</h3>]]></content>
-  </entry>
 </search>

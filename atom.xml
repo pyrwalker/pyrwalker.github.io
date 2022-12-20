@@ -6,10 +6,30 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-12-19T10:43:37.268Z</updated>
+  <updated>2022-12-19T15:02:08.461Z</updated>
   <id>http://example.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用wsl与扩展屏构建舒适的编程环境</title>
+    <link href="http://example.com/2022/12/19/wsl/"/>
+    <id>http://example.com/2022/12/19/wsl/</id>
+    <published>2022-12-19T14:27:22.000Z</published>
+    <updated>2022-12-19T15:02:08.461Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>在上学期做工高报名表的时候，最后一题是关于ros的使用的，其中涉及到了linux的安装与使用，当时是我第一次接触linux系统，直接就上了双系统（真有我的。于是，一个当时连cd和mv命令都分不清的人，面对着一屏幕的报错，开始怀疑人生</p><h3 id="安装扩展屏"><a href="#安装扩展屏" class="headerlink" title="安装扩展屏"></a>安装扩展屏</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h3&gt;&lt;p&gt;在上学期做工高报名表的时候，最后一题是关于ros的使用的，其中涉及到了linux的安装与使用，当时是我第一次接触linux系</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>费米能级推导并解释其与温度的关系</title>

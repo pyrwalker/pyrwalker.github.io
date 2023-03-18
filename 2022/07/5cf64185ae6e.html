@@ -18,7 +18,7 @@
     
     <title>
         
-            Tag: 固体物理 |
+            blog搭建过程 |
         
         pyrwalker&#39;blog
     </title>
@@ -172,42 +172,206 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="tag-container">
-        <div class="tag-name"><i class="fas fa-tag"></i>&nbsp;固体物理
-        </div>
-        <div class="tag-post-list">
-            
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2022</span>
-                <span class="archive-year-post-count">[1]</span>
+    <div class="post-page-container">
+        <div class="article-content-container">
+            <div class="article-title">
+                <span class="title-hover-animation"><h1 style="font-size:2rem; font-weight: bold; margin: 10px 0;">blog搭建过程</h1></span>
             </div>
-            <ul class="article-list">
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/avatar.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">叶可乐</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-duotone fa-pen-line"></i>&nbsp;
+        <span class="pc">2022-07-26 17:00:00</span>
+        <span class="mobile">2022-07-26 17:00</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-duotone fa-folder-open"></i></i>&nbsp;
+            <ul>
                 
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2022/12/19/Fermi_energy/"
-                        >费米能级推导并解释其与温度的关系</a>
-                        <span class="article-date">12-19</span>
+                    <li>
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E5%90%91/">技术向</a>&nbsp;
                     </li>
                 
             </ul>
-        </section>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-duotone fa-tags"></i></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>315 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content markdown-body">
+                <p>整理了在搭建博客时遇到的问题与解决方法</p>
+<ul>
+<li><p>基本搭建过程<br><a class="link"   target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464" >使用 Hexo+GitHub 搭建个人免费博客教程<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>hexo初始化失败</p>
+</li>
+</ul>
+<div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="comment">#开了网络代理运行运行&quot;hexo init&quot;失败</span></span><br></pre></td></tr></table></figure></div>
+<ul>
+<li><p>部署到自己的网址</p>
+<p>  添加CNAME文件，在github仓库中的page界面加入自己网站域名</p>
+</li>
+<li><p>选择主题,主题配置</p>
+<p>阅读主题文档。<br><a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.evanluo.top/docs" >redefine文档<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>hexo d上传过慢</p>
+<p>git开启端口，施展魔法。</p>
+</li>
+<li><p>图片显示问题</p>
+</li>
+</ul>
+<ol>
+<li><p>在source文件夹中建立images文件夹，将图片命名为.&#x2F;path&#x2F;to&#x2F;xx.jpg，按照教程中所说的那个插件（hexo-asset-image）好像不起作用,可能是我的npm的问题,放弃使用本方法，改用图床搭建。</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1702112" >hexo 图片显示问题及使用typora设置图片路径 <i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>图床搭建</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://www.cnblogs.com/yangstar/p/16700586.html" >阿里云图床搭建 - yangstar - 博客园 (cnblogs.com)<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>利用picgo与typora搭配实现本地与网页图片显示。</p>
+</li>
+</ol>
+<ul>
+<li>解决连接不安全的问题</li>
+</ul>
+<ol>
+<li><p>在阿里云购买ssl证书 。</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://developer.aliyun.com/article/875508#comment" >2022阿里云免费SSL证书申请全过程<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>硅云似乎需要虚拟主机才能部署,搁置。</p>
+</li>
+</ol>
+<ul>
+<li><p>Latex的数学公式无法正确显示</p>
+<p>安装hexo-filter-mathjax插件</p>
+</li>
+</ul>
+
+            </div>
+
+            
+                <div class="post-copyright-info">
+                    <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：blog搭建过程</li>
+        <li>Post author：叶可乐</li>
+        <li>Create time：2022-07-26 17:00:00</li>
+        <li>
+            Post link：https://pyrwalker.top/2022/07/5cf64185ae6e.html
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+                </div>
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">#博客搭建</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2022/12/3ea6c478b80e.html"
+                            >
+                                <span class="left arrow-icon flex-center">
+                                <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">ChatGPT:学习助手？冒险游戏✓</span>
+                                    <span class="post-nav-item">Prev posts</span>
+                                </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                            rel="next"
+                            href="/2022/07/ed6091cdab4b.html"
+                            >
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">小破站指南</span>
+                                    <span class="post-nav-item">Next posts</span>
+                                </span>
+                                <span class="right arrow-icon flex-center">
+                                <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
         </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
+        
     </div>
-
-    <div class="tag-paginator">
-        <div class="paginator">
-    
-
-    
 </div>
-
+            </div>
+        
     </div>
 </div>
 
@@ -229,7 +393,7 @@
               <span>2022</span>
               -
             
-            2022&nbsp;</i>&nbsp;<a href="/">叶可乐</a>
+            2023&nbsp;</i>&nbsp;<a href="/">叶可乐</a>
         </div>
         
             <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"> </script>
@@ -248,7 +412,7 @@
                 
                 
                     <i class="fas fa-chart-area"></i>
-                    <span class="post-count">2k</span>                    
+                    <span class="post-count">3.8k</span>                    
                 
             </div>
         
@@ -267,6 +431,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fa-duotone fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -383,6 +564,14 @@
 
 
 <div class="post-scripts pjax">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
     
 </div>
 

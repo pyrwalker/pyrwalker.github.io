@@ -3,9 +3,7 @@
   <entry>
     <title>小破站指南</title>
     <url>/2022/07/ed6091cdab4b.html</url>
-    <content><![CDATA[<p>哇库哇库！让我看看哪个小可爱来到了我的小破站！</p>
-<p><strong>不管你是因为什么机缘巧合来到了这里，不妨先在这里随便逛逛吧~</strong></p>
-<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><h3 id="灵感来由："><a href="#灵感来由：" class="headerlink" title="灵感来由："></a>灵感来由：</h3><p>搭建这个博客的想法来源于一个经常和我捣鼓的朋友，再加上之前一直有个想把自己学过的知识记录下来的念头，两个想法碰撞起来就有了这个博客的雏形。</p>
+    <content><![CDATA[<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><h3 id="灵感来由："><a href="#灵感来由：" class="headerlink" title="灵感来由："></a>灵感来由：</h3><p>搭建这个博客的想法来源于一个经常和我捣鼓的朋友，再加上之前一直有个想把自己学过的知识记录下来的念头，两个想法碰撞起来就有了这个博客的雏形。</p>
 <p>这个博客是依据GitHub Page 与 Hexo的框架共同搭建的，由于在GitHub上能找到许多大佬们写好的Hexo主题，在这个基础上加入自己的元素，对小白还是比较友好的。</p>
 <h3 id="bugs："><a href="#bugs：" class="headerlink" title="bugs："></a>bugs：</h3><ul>
 <li>https连接不安全报错,目前想到的办法是等着域名过期将它转到阿里云管理</li>

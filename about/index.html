@@ -52,8 +52,7 @@
     REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/avatar.png","favicon":"/images/logo.png","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f65736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/blog_bksmall.png","dark":"https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/blog_bksmall.png"},"title_color":{"light":"#FFF0F5","dark":"#FFFAFA"},"description":"pyrwalker's blog"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.5"};
     REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
-<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-<style>mjx-container[jax="SVG"] {
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -165,7 +164,8 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head>
+</style><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
 
 
 <body>
@@ -283,165 +283,33 @@ mjx-container[display="true"] + br {
             <div class="main-content">
 
                 
-                    $friend-link-item-height = 82px
-$friend-link-item-height-tablet = 68px
-$friend-link-item-interval = 16px
-$friend-link-item-border-radius = 6px
+                    <div class="fade-in-down-animation">
+    <div class="page-template-container">
+        
+        
+        <div class="page-template-content markdown-body">
+            
+                <h2 id="about-me"><a href="#about-me" class="headerlink" title="about me"></a>about me</h2><p>【春晖中学】<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.054ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.242ex" role="img" focusable="false" viewBox="0 -525 1000 549"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="21D2" d="M580 514Q580 525 596 525Q601 525 604 525T609 525T613 524T615 523T617 520T619 517T622 512Q659 438 720 381T831 300T927 263Q944 258 944 250T935 239T898 228T840 204Q696 134 622 -12Q618 -21 615 -22T600 -24Q580 -24 580 -17Q580 -13 585 0Q620 69 671 123L681 133H70Q56 140 56 153Q56 168 72 173H725L735 181Q774 211 852 250Q851 251 834 259T789 283T735 319L725 327H72Q56 332 56 347Q56 360 70 367H681L671 377Q638 412 609 458T580 514Z"></path></g></g></g></svg></mjx-container>【ZJUers】</p>
+<p>【ACEE混子】</p>
+<p>【活在ddl上的男人】</p>
+<p>tags：「诗词歌赋」「折腾星人」</p>
 
-.page-template-container {
+            
+        </div>
+        <div class="page-template-comments">
+            
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+</div>
 
-  redefine-container(false, 0, 0, 30px, 30px)
-
-  .page-template-content {
-    color var(--default-text-color)
-
-    h1, h2, h3, h4, h5, h6 {
-
-      &:first-child {
-        margin-top 0
-      }
-
-    }
-  }
-
-
-  if (hexo-config('menu.Links')) {
-    .friends-link-container {
-
-      .friends-link-list {
-        position relative
-
-        .friends-link-item {
-          box-sizing border-box
-          position relative
-          float left
-          width 50%
-          cursor pointer
-          height $friend-link-item-height
-          padding-bottom $friend-link-item-interval
-
-          +redefine-tablet() {
-            height $friend-link-item-height-tablet
-          }
-
-          &:nth-child(odd) {
-            padding-right $friend-link-item-interval * 0.5
-          }
-
-          &:nth-child(even) {
-            padding-left $friend-link-item-interval * 0.5
-          }
-
-          .content {
-            position relative
-            width 100%
-            height 100%
-            box-shadow var(--shadow-color-2) 0px 6px 24px 0px, var(--shadow-color-1) 0px 0px 0px 1px
-            border-radius $friend-link-item-border-radius
-            padding-left $friend-link-item-height - $friend-link-item-interval
-            box-sizing border-box
-
-
-            +redefine-tablet() {
-              padding-left $friend-link-item-height-tablet - $friend-link-item-interval
-            }
-
-            &:hover {
-              box-shadow var(--shadow-color-2) 0px 6px 24px 0px, var(--shadow-color-1) 0px 0px 0px 1px
-
-              .info .name {
-                color var(--primary-color)
-              }
-            }
-
-            .radius {
-              border-top-left-radius $friend-link-item-border-radius
-              border-bottom-left-radius $friend-link-item-border-radius
-            }
-
-            .avatar {
-              position absolute
-              top 0
-              left 0
-              width $friend-link-item-height  - $friend-link-item-interval
-              height 100%
-              display flex
-              justify-content center
-              align-items center
-              font-size 2rem
-              background var(--second-background-color)
-              color var(--second-text-color)
-
-
-              +redefine-tablet() {
-                width $friend-link-item-height-tablet  - $friend-link-item-interval
-              }
-
-              img {
-                box-sizing border-box
-                position relative
-                width 100%
-                height 100%
-              }
-            }
-
-
-            .info {
-              position relative
-              width 100%
-              height 100%
-              box-sizing border-box
-              padding 10px
-              display flex
-              flex-direction column
-              align-items center
-              justify-items flex-start
-
-              +redefine-tablet() {
-                padding 6px
-              }
-
-              .name {
-                width 100%
-                height 60%
-                font-size 1.28rem
-                color var(--second-text-color)
-
-                +redefine-tablet() {
-                  font-size 1.08rem
-                }
-              }
-
-              .description {
-                width 100%
-                height 40%
-                font-size 1rem
-                color var(--third-text-color)
-
-
-                +redefine-tablet() {
-                  font-size 0.98rem
-                }
-              }
-
-              .ellipsis {
-                overflow hidden
-                text-overflow ellipsis
-                white-space nowrap
-              }
-
-            }
-          }
-
-        }
-
-      }
-
-    }
-
-  }
-
-}
+            
+        </div>
+    </div>
+</div>
 
 
                 

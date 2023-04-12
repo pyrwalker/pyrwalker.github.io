@@ -18,7 +18,7 @@
     
     <title>
         
-            【可乐周报】2023-00：小破站除草篇-靡不有初，鲜克有终 |
+            【可乐周报】2023-00：《除草篇》-靡不有初，鲜克有终 |
         
         pyrwalker&#39;blog
     </title>
@@ -175,7 +175,7 @@
     <div class="post-page-container">
         <div class="article-content-container">
             <div class="article-title">
-                <span class="title-hover-animation"><h1 style="font-size:2rem; font-weight: bold; margin: 10px 0;">【可乐周报】2023-00：小破站除草篇-靡不有初，鲜克有终</h1></span>
+                <span class="title-hover-animation"><h1 style="font-size:2rem; font-weight: bold; margin: 10px 0;">【可乐周报】2023-00：《除草篇》-靡不有初，鲜克有终</h1></span>
             </div>
 
             
@@ -258,7 +258,7 @@
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li>Post title：【可乐周报】2023-00：小破站除草篇-靡不有初，鲜克有终</li>
+        <li>Post title：【可乐周报】2023-00：《除草篇》-靡不有初，鲜克有终</li>
         <li>Post author：叶可乐</li>
         <li>Create time：2023-04-12 14:09:35</li>
         <li>
@@ -310,12 +310,90 @@
 
         
             <div class="toc-content-container">
-                <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-text">写在前面</span></a></li></ol>
-    </div>
-</div>
+                .post-toc-wrap {
+  width 100%
+  font-size 0.92rem
+  box-sizing border-box
+  font-family "Noto Sans", sans-serif
+
+
+  
+  .post-toc {
+    
+    ol {
+      border-left 2px dotted var(--shadow-color-1)
+      list-style none
+      margin 0
+      padding 0 2px 12px 10px
+      text-align left
+
+      &:last-child {
+        padding-bottom 0
+      }
+
+      > ol {
+        padding-left 0
+      }
+
+      a {
+        transition-property all
+        transition()
+        
+      }
+    }
+
+
+    .nav-item {
+      line-height 2
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      //word-wrap:break-word
+      font-size 0.9rem
+    }
+
+
+    .nav {
+      .nav-child {
+        display hexo-config('toc.expand_all') ? block : none
+      }
+
+      .active > .nav-child {
+        display block
+      }
+
+      .active-current > .nav-child {
+        display block
+
+        > .nav-item {
+          display block
+        }
+      }
+
+
+      .nav-number, .nav-text {
+        color var(--default-text-color)
+      }
+
+      .active > a {
+        .nav-number, .nav-text {
+          color var(--primary-color)
+          font-weight bold
+        }
+      }
+
+      .active-current > a {
+        .nav-number, .nav-text {
+          //color var(--primary-color)
+          font-weight bold
+          transition-duration 0.1s
+        }
+      }
+    }
+  }
+}
+
+
             </div>
         
     </div>

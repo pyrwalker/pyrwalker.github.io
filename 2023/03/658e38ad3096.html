@@ -52,7 +52,8 @@
     REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/avatar.png","favicon":"/images/logo.png","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f65736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/blog_bksmall.png","dark":"https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/blog_bksmall.png"},"title_color":{"light":"#FFF0F5","dark":"#FFFAFA"},"description":"pyrwalker's blog"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.5"};
     REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
-<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -164,8 +165,7 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
+</style></head>
 
 
 <body>
@@ -440,12 +440,90 @@ mjx-container[display="true"] + br {
 
         
             <div class="toc-content-container">
-                <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E8%88%AC%E7%B3%BB%E7%BB%9F%E7%89%B9%E6%80%A7"><span class="nav-text">一般系统特性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7"><span class="nav-text">线性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%B6%E4%B8%8D%E5%8F%98%E6%80%A7"><span class="nav-text">时不变性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A8%B3%E5%AE%9A%E6%80%A7"><span class="nav-text">稳定性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%A0%E6%9E%9C%E6%80%A7"><span class="nav-text">因果性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%B0%E5%BF%86%E6%80%A7"><span class="nav-text">记忆性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%AF%E9%80%86%E6%80%A7"><span class="nav-text">可逆性</span></a></li></ol></li></ol>
-    </div>
-</div>
+                .post-toc-wrap {
+  width 100%
+  font-size 0.92rem
+  box-sizing border-box
+  font-family "Noto Sans", sans-serif
+
+
+  
+  .post-toc {
+    
+    ol {
+      border-left 2px dotted var(--shadow-color-1)
+      list-style none
+      margin 0
+      padding 0 2px 12px 10px
+      text-align left
+
+      &:last-child {
+        padding-bottom 0
+      }
+
+      > ol {
+        padding-left 0
+      }
+
+      a {
+        transition-property all
+        transition()
+        
+      }
+    }
+
+
+    .nav-item {
+      line-height 2
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      //word-wrap:break-word
+      font-size 0.9rem
+    }
+
+
+    .nav {
+      .nav-child {
+        display hexo-config('toc.expand_all') ? block : none
+      }
+
+      .active > .nav-child {
+        display block
+      }
+
+      .active-current > .nav-child {
+        display block
+
+        > .nav-item {
+          display block
+        }
+      }
+
+
+      .nav-number, .nav-text {
+        color var(--default-text-color)
+      }
+
+      .active > a {
+        .nav-number, .nav-text {
+          color var(--primary-color)
+          font-weight bold
+        }
+      }
+
+      .active-current > a {
+        .nav-number, .nav-text {
+          //color var(--primary-color)
+          font-weight bold
+          transition-duration 0.1s
+        }
+      }
+    }
+  }
+}
+
+
             </div>
         
     </div>

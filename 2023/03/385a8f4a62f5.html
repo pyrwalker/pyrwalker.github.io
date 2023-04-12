@@ -353,12 +353,90 @@
 
         
             <div class="toc-content-container">
-                <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%BC%E5%90%88%E7%BD%91%E7%AB%99"><span class="nav-text">综合网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%BA%94%E7%94%A8"><span class="nav-text">软件应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%B5%E5%AD%90%E4%B9%A6-x2F-%E6%95%99%E6%9D%90"><span class="nav-text">电子书&#x2F;教材</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AA%E5%AE%8C%E9%A2%84%E5%91%8A"><span class="nav-text">未完预告</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A8%B1%E4%B9%90%E5%BD%B1%E9%9F%B3%E7%AF%87%EF%BC%9A%E2%80%9C%E4%BD%A0%E6%83%B3%E7%9C%8B%E7%9A%84%E8%BF%99%E9%87%8C%E9%83%BD%E6%9C%89%E2%80%9D"><span class="nav-text">娱乐影音篇：“你想看的这里都有”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TG%E7%AF%87%EF%BC%9A%E2%80%9C%E5%BC%80%E5%90%AF%E8%B7%B3%E8%84%B1%E5%87%BA%E6%A1%86%E6%9E%B6%E7%9A%84%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F%E2%80%9D"><span class="nav-text">TG篇：“开启跳脱出框架的搜索方式”</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E7%9B%98%E7%AF%87%EF%BC%9A%E2%80%9D%E9%AB%98%E6%98%8E%E7%9A%84%E7%8C%8E%E6%89%8B%E5%96%84%E4%BA%8E%E5%8F%91%E7%8E%B0%E9%9A%90%E8%97%8F%E7%9D%80%E7%9A%84%E7%8C%8E%E7%89%A9%E2%80%9C"><span class="nav-text">网盘篇：”高明的猎手善于发现隐藏着的猎物“</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%EF%BC%9A%E2%80%9C%E4%BD%A0%E7%9C%9F%E7%9A%84%E4%BC%9A%E4%BD%BF%E7%94%A8%E4%BD%A0%E7%9A%84%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E5%90%97%E2%80%9D"><span class="nav-text">搜索引擎：“你真的会使用你的搜索引擎吗”</span></a></li></ol></li></ol>
-    </div>
-</div>
+                .post-toc-wrap {
+  width 100%
+  font-size 0.92rem
+  box-sizing border-box
+  font-family "Noto Sans", sans-serif
+
+
+  
+  .post-toc {
+    
+    ol {
+      border-left 2px dotted var(--shadow-color-1)
+      list-style none
+      margin 0
+      padding 0 2px 12px 10px
+      text-align left
+
+      &:last-child {
+        padding-bottom 0
+      }
+
+      > ol {
+        padding-left 0
+      }
+
+      a {
+        transition-property all
+        transition()
+        
+      }
+    }
+
+
+    .nav-item {
+      line-height 2
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      //word-wrap:break-word
+      font-size 0.9rem
+    }
+
+
+    .nav {
+      .nav-child {
+        display hexo-config('toc.expand_all') ? block : none
+      }
+
+      .active > .nav-child {
+        display block
+      }
+
+      .active-current > .nav-child {
+        display block
+
+        > .nav-item {
+          display block
+        }
+      }
+
+
+      .nav-number, .nav-text {
+        color var(--default-text-color)
+      }
+
+      .active > a {
+        .nav-number, .nav-text {
+          color var(--primary-color)
+          font-weight bold
+        }
+      }
+
+      .active-current > a {
+        .nav-number, .nav-text {
+          //color var(--primary-color)
+          font-weight bold
+          transition-duration 0.1s
+        }
+      }
+    }
+  }
+}
+
+
             </div>
         
     </div>

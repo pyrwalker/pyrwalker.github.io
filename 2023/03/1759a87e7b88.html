@@ -52,7 +52,8 @@
     REDEFINE.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#005080","avatar":"/images/avatar.png","favicon":"/images/logo.png","article_img_align":"center","right_side_width":"210px","content_max_width":"1000px","nav_color":{"left":"#f65736","right":"#367df7","transparency":35},"hover":{"shadow":true,"scale":false},"first_screen":{"enable":true,"background_image":{"light":"https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/blog_bksmall.png","dark":"https://pyrwalker-blog.oss-cn-hangzhou.aliyuncs.com/blog_bksmall.png"},"title_color":{"light":"#FFF0F5","dark":"#FFFAFA"},"description":"pyrwalker's blog"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":false}}},"local_search":{"enable":true,"preload":false},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"0.3.5"};
     REDEFINE.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
   </script>
-<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -164,8 +165,7 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-</head>
+</style></head>
 
 
 <body>
@@ -452,12 +452,90 @@ mjx-container[display="true"] + br {
 
         
             <div class="toc-content-container">
-                <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div style="font-size: 1.3rem;margin-top: 0; margin-bottom: 0.8rem; transition-duration: 0.1s;"><i class="fa-solid fa-list"></i> <strong>Contents</strong></div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%B9%E7%B1%B3-%E7%8B%84%E6%8B%89%E5%85%8B%E5%88%86%E5%B8%83"><span class="nav-text">费米-狄拉克分布</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%B9%E7%B1%B3%E8%83%BD%E7%BA%A7-E-F-%E6%8E%A8%E5%AF%BC"><span class="nav-text">费米能级推导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B4%B9%E7%B1%B3%E8%83%BD%E7%BA%A7%E4%B8%8E%E6%B8%A9%E5%BA%A6%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="nav-text">费米能级与温度的关系</span></a></li></ol>
-    </div>
-</div>
+                .post-toc-wrap {
+  width 100%
+  font-size 0.92rem
+  box-sizing border-box
+  font-family "Noto Sans", sans-serif
+
+
+  
+  .post-toc {
+    
+    ol {
+      border-left 2px dotted var(--shadow-color-1)
+      list-style none
+      margin 0
+      padding 0 2px 12px 10px
+      text-align left
+
+      &:last-child {
+        padding-bottom 0
+      }
+
+      > ol {
+        padding-left 0
+      }
+
+      a {
+        transition-property all
+        transition()
+        
+      }
+    }
+
+
+    .nav-item {
+      line-height 2
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
+      //word-wrap:break-word
+      font-size 0.9rem
+    }
+
+
+    .nav {
+      .nav-child {
+        display hexo-config('toc.expand_all') ? block : none
+      }
+
+      .active > .nav-child {
+        display block
+      }
+
+      .active-current > .nav-child {
+        display block
+
+        > .nav-item {
+          display block
+        }
+      }
+
+
+      .nav-number, .nav-text {
+        color var(--default-text-color)
+      }
+
+      .active > a {
+        .nav-number, .nav-text {
+          color var(--primary-color)
+          font-weight bold
+        }
+      }
+
+      .active-current > a {
+        .nav-number, .nav-text {
+          //color var(--primary-color)
+          font-weight bold
+          transition-duration 0.1s
+        }
+      }
+    }
+  }
+}
+
+
             </div>
         
     </div>

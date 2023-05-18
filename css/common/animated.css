@@ -27,10 +27,6 @@
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
   transition-timing-function: ease, ease, ease, ease, ease-in-out, ease-in-out;
 }
-.title-hover-animation:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
 @-moz-keyframes fade-in-down {
   0% {
     opacity: 0;

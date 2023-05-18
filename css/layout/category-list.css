@@ -1,19 +1,36 @@
-.category-list-container .category-list-content .all-category-list li.all-category-list-item {
-  font-size: 1rem;
-  margin-bottom: 15px;
+.category-list-container .category-list-content .all-category-list {
+  display: flex;
+  flex-wrap: wrap;
 }
-.category-list-container .category-list-content .all-category-list li.all-category-list-item:last-child {
-  margin-bottom: 0;
+.category-list-container .category-list-content .all-category-list li.all-category-list-item {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  box-shadow: var(--redefine-box-shadow-flat);
+  padding: 10px;
+  border-radius: $redefine-border-radius-medium;
+  margin: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item:hover,
+.category-list-container .category-list-content .all-category-list li.all-category-list-item:focus {
+  box-shadow: var(--redefine-box-shadow-flat-hover) !important;
+  background-color: var(--primary-color);
+  transition: all 0.2s ease;
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item:hover a,
+.category-list-container .category-list-content .all-category-list li.all-category-list-item:focus a {
+  color: var(--background-color);
+}
+.category-list-container .category-list-content .all-category-list li.all-category-list-item:active {
+  transform: scale(0.95);
 }
 .category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count {
-  float: right;
-  color: var(--default-text-color);
-}
-.category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count::before {
-  content: '[';
-}
-.category-list-container .category-list-content .all-category-list li.all-category-list-item span.all-category-list-count::after {
-  content: ']';
+  color: var(--third-text-color);
+  margin-left: 5px;
+  background-color: var(--third-background-color);
+  padding: 2px 5px;
+  border-radius: $redefine-border-radius-small;
 }
 .category-list-container .category-list-content .all-category-list li.all-category-list-item ul.all-category-list-child {
   margin-left: 10px;

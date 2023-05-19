@@ -1,3 +1,1 @@
-Global.initMermaid = () => {
-    mermaid.init();
-}
+Global.initMermaid=()=>{mermaid.init()};

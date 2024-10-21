@@ -451,4 +451,75 @@
         <category>生活</category>
       </categories>
   </entry>
+  <entry>
+    <title>周记：初来乍到的一周</title>
+    <url>/2024/10/0ef8b19f9305.html</url>
+    <content><![CDATA[<p>20241010<br>来实验室的第一天，希望未来能每天记录一下当天的任务。<br>今天跟孟师兄、王师兄开会，主要关于毕设与未来的学习规划。</p>
+<p>学习内容</p>
+<ol>
+<li>FFT的直观原理</li>
+<li>SAR ADC的基本原理</li>
+<li>二进制加权电荷缩放型DAC</li>
+</ol>
+<p>20241011<br>用来学习的时间太短了，一下子就没有了</p>
+<p>学习内容</p>
+<ol>
+<li>复习傅立叶级数和变换：对于连续的、周期性的信号的傅立叶级数和展开有了比较直观的认识了，但是对于离散的、非周期性的信号还不是很理解。</li>
+<li>学习delta-sigma ADC的FFT指标：学习中</li>
+<li>读了understanding of delta-sigma ADC 1st 前几页：孟师兄说这一版比较难理解，之后就不接着读了</li>
+</ol>
+<p>20241012</p>
+<p>下午主要在组装主机和显示屏 ，配置电脑环境，加上党支部&#x2F;实验室的报销，干了蛮多琐事，没什么时间来看书。</p>
+<p>学习内容</p>
+<ol>
+<li>ADC FFT方法：windowing</li>
+</ol>
+<p>20241013<br>摸鱼</p>
+<p>20241014<br>学习内容</p>
+<ol>
+<li>ADC FFT的方法：scaling + averaging</li>
+<li>跑了书上的代码，但是有问题</li>
+</ol>
+<p>20241016<br>跟王师兄讨论上周进度和本周规划</p>
+<p>学习内容</p>
+<ol>
+<li>系统了解了ADC的基本、静态、动态指标</li>
+<li>基本搞懂了SAR_NBIT的MATLAB代码逻辑</li>
+<li>遗留问题：差分的DAC切换不清楚，三种不同的SAR切换逻辑</li>
+</ol>
+<p>20241017</p>
+<p>学习内容</p>
+<ol>
+<li>差分输入与单端输入的adc</li>
+<li>三种不同切换逻辑：传统切换逻辑、单调切换逻辑、Vcm-based 切换逻辑</li>
+</ol>
+<p>20241018<br>今天开了毕设启动会、信仰论坛</p>
+<p>学习内容</p>
+<ol>
+<li>完成了digital slope的MATLAB行为级仿真</li>
+<li>完成了digital slope with preset bit的MATLAB的行为级仿真</li>
+</ol>
+<p>对于digital slope with preset bit的一些思考：</p>
+<ol>
+<li>思路和师兄的不一样，用到了三个状态-1 0 1，电路结构实现上可能还有些问题。 </li>
+<li>但是SNDR会高一些（残差电压比较小）</li>
+<li>功耗方面需要结合实际电路分析</li>
+<li>如果从正值、负值跳变时，理论上会有些问题，但是对结果影响不大</li>
+<li>关于残差电压，如果通过回退，将其限制在0-LSB之间，会提升SNDR</li>
+<li>一些小操作：histogram，snipaste</li>
+</ol>
+<p>近期任务</p>
+<ol>
+<li>阅读understanding delta sigma ADC 2的第二章，回答两个问题</li>
+<li>为什么OSR能够提高SQNR</li>
+<li>Noise Shaping是怎么实现的</li>
+<li>阅读SAR ADC的两篇文献</li>
+</ol>
+<p>20241019<br>摸鱼</p>
+<p>20241020<br>摸鱼</p>
+]]></content>
+      <categories>
+        <category>工作日志</category>
+      </categories>
+  </entry>
 </search>
